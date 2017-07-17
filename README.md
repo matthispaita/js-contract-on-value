@@ -26,17 +26,28 @@ const ctString = contract('primitive', String);
 ```
 
 ## Important objects:
-|                                                                 |                                                                 |
-|-----------------------------------------------------------------|-----------------------------------------------------------------|
-| <img height='250px' width='350px' src='./doc/objects.png'/>     | Export of this library is `contract` function.<br>There are three type of contract called as assertion and stored at `assertions` object.<br>`contract` is used to create a new object representating the contract.<br>`validate` and `validateBool` validate a contract in function of a data.<br> All functions are pure.
+| | |
+|-|-|
+| <img height='260px' width='380px' src='./doc/globalObjects.png'/>     | Export of this library is `contract` function.<br>There are three type of contract called as assertion and stored at `assertions` object.<br>`contract` is used to create a new object representating the contract.<br>`validate` and `validateBool` validate a contract in function of a data.<br> All functions are pure.
 
 ## Choose an assertion:
-### Primitive
-Used to match primitive data type.<br>
-Correct if data is an instance of model or an primitive of this.<br>
-Function composing the model shall be an identifier of object `primitives`
-
+### Primitive:
+| | |
+|-|-|
+|<img height='140px' width='210px' src='./doc/objectPrimitives.png'/>|Used to match primitive data type.<br>Correct if data is an instance of model or an primitive of this.<br>Function composing the model shall be an identifier of object `primitives`|
+### Instance:
+Simply a test based on instanceof operator.
+### Iterator:
+Ensure that data is an iterable object and each values corresponding to the model.<br >
+`subType` arg is required for the call to `contract` and `model` is complies to that.
 ## Creating a contract:
 <img height='180px' width='600px' src='./doc/contractFunctionInterface.png'/>
 
 ## Validating a contract:
+### Error:
+
+### Boolean:
+
+## Deeper:
+
+## See also:
